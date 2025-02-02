@@ -5,6 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Главная - Путешествия по миру</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Стили для контейнера с картинками */
+        .image-container {
+            display: flex; /* Используем Flexbox */
+            justify-content: space-between; /* Равномерное распределение пространства */
+            gap: 10px; /* Расстояние между картинками */
+            margin-top: 10px;
+        }
+
+        .image-container img {
+            max-width: 48%; /* Ширина каждой картинки */
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тень для красоты */
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -22,7 +38,12 @@
     <main>
         <h2>Добро пожаловать на наш сайт!</h2>
         <p>Здесь вы найдёте информацию о самых интересных местах для путешествий по всему миру.</p>
-        <img src="./src/pic_index.jpg" alt="Путешествия">
+        
+        <!-- Контейнер для картинок -->
+        <div class="image-container">
+            <img src="./src/pic_index1.jpg" alt="Путешествие 1">
+            <img src="./src/pic_index2.jpg" alt="Путешествие 2">
+        </div>
     </main>
     <footer>
         <p>&copy; 2025 Путешествия по миру</p>
